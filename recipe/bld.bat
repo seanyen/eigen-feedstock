@@ -7,6 +7,7 @@ cmake -LAH -G"NMake Makefiles"              ^
   -DCMAKE_BUILD_TYPE=%CMAKE_CONFIG%         ^
   -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX%      ^
   -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%   ^
+  -DCMAKE_Fortran_COMPILER=OFF ^
   -DEIGEN_BUILD_PKGCONFIG=ON ^
   ..
 if errorlevel 1 exit 1
